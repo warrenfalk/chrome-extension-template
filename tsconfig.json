@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "ES6",
+    "module": "amd",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outFile": "./dist/bundle.js",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["dom", "es6", "dom.iterable", "scripthost"],
+    "plugins": [{ "name": "@yarnpkg/pnpify/typescript" }]
+  },
+  "include": ["src/*"]
+}

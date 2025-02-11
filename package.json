@@ -1,0 +1,25 @@
+{
+  "name": "extension",
+  "scripts": {
+    "build": "node esbuild.js",
+    "build:watch": "node esbuild.js --watch",
+    "package": "zip -r ../extension.zip.tmp dist icons background.js manifest.json popup.html && mv ../extension.zip.tmp ../extension.zip"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.0",
+    "@types/chrome": "^0.0.268",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "0.19.5",
+    "esbuild-plugin-ts-references": "^0.2.2",
+    "eslint": "^9.11.0",
+    "eslint-plugin-react": "^7.36.1",
+    "globals": "^15.9.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.6.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
