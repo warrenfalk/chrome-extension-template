@@ -1,9 +1,9 @@
 {
-  "name": "extension",
+  "name": "chromelymcchromeface-entension",
   "scripts": {
     "build": "node esbuild.js",
     "build:watch": "node esbuild.js --watch",
-    "package": "zip -r ../extension.zip.tmp dist icons background.js manifest.json popup.html && mv ../extension.zip.tmp ../extension.zip"
+    "package": "zip -r ../chromelymcchromeface-extension.zip.tmp dist icons background.js manifest.json popup.html && mv ../chromelymcchromeface-extension.zip.tmp ../chromelymcchromeface-extension.zip"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.0",

@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(() => {
-  console.log("Extension Installed", Date.now());
+  console.log("ChromelyMcChromeface Installed", Date.now());
 });
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
