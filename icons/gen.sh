@@ -21,7 +21,7 @@ SIZES=(128 64 48 16)
 for SIZE in "${SIZES[@]}"
 do
     OUTPUT_FILE="${OUTPUT_PREFIX}${SIZE}.png"
-    convert -background none -resize ${SIZE}x${SIZE} $INPUT_FILE $OUTPUT_FILE
+    magick -background none $INPUT_FILE -resize ${SIZE}x${SIZE} $OUTPUT_FILE
     echo "Created $OUTPUT_FILE"
 done
 
